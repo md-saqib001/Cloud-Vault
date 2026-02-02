@@ -1,0 +1,42 @@
+{
+  "name": "cloud-vault",
+  "version": "1.0.0",
+  "description": "A Mini Google Drive",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md-saqib001/Cloud-Vault.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "imports": {
+    "#config/*": "./src/config/*",
+    "#database/*": "./database/*",
+    "#uploads/*": "./uploads/*",
+    "#scripts/*": "./scripts/*",
+    "#src/*": "./src/*",
+    "#routes/*": "./src/routes/*",
+    "#controller/*": "./src/controller/*"
+  },
+  "bugs": {
+    "url": "https://github.com/md-saqib001/Cloud-Vault/issues"
+  },
+  "homepage": "https://github.com/md-saqib001/Cloud-Vault#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-sqlite3": "^0.9.16",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "multer": "^2.0.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "uuid": "^13.0.0"
+  }
+}
